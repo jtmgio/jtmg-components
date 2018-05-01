@@ -1,0 +1,124 @@
+
+
+/***************************************************
+	START TABS STYLING V2
+***************************************************/
+
+ul.jtmgio-tabs {
+	margin: 0 !important;
+	padding: 0;
+	height: 30px;
+	position: relative;
+	z-index: 2;
+	top:4px;
+}
+
+.ui-datepicker{
+	z-index: 20 !important;
+}
+
+/* single tab */
+ul.jtmgio-tabs li {
+	float: left;
+	padding: 0;
+	margin: 0 5px;
+	list-style-type: none;
+}
+ul.jtmgio-tabs li:first-child{
+	margin-left:0px;
+}
+/* link inside the tab. uses a background image */
+ul.jtmgio-tabs a {
+	font: 12px 'Open Sans', Arial, sans-serif;
+	border: 1px solid #666;
+	color: #0079C2;
+	padding: 0 10px;
+	height: 33px;
+	line-height: 33px;
+	text-shadow: 0 1px 0 white;
+	float: left;
+	display: block;
+	text-decoration: none;
+	border-bottom: 0px;
+	position: relative;
+	top: -3px;
+	outline: 0;
+	border-radius: 4px 4px 0 0;
+	box-shadow: inset 0 -3px 0 rgba(0,0,0,0.1);
+
+  background: #ededed; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #ededed 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffffff 0%,#ededed 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffffff 0%,#ededed 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #ffffff 0%,#ededed 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+ }
+ul.jtmgio-tabs a:hover {
+	background: #ffffbf;
+	text-shadow: none;
+	color: #005589;
+}
+ul.jtmgio-tabs a.disabled {
+   	color: #b8b8b8;
+   	cursor: default;
+   	background: inherit !important;
+}
+/* selected tab */
+ul.jtmgio-tabs a.current {
+	background: #fff;
+	border-bottom: none;
+	color: #333;
+	cursor: default;
+	margin-top: 0px;
+	height: 34px;
+	box-shadow: none;
+}
+.jtmgio-panes {
+	position: relative;
+}
+/* tab pane */
+.jtmgio-panes > .tab-body {
+	/*display: none;*/
+	border: 1px solid #666;
+	border-width: 1px 1px 1px 1px;
+	height: 500px;
+	padding: 15px;
+	background-color: #fff;
+	border-radius: 0 4px 4px 4px;
+	position: relative;
+	z-index: 1;
+	overflow: auto;
+	clear: both;
+	overflow-x:hidden;
+
+}
+
+.jtmgio-panes > .tab-body > .content{
+	padding: 15px;
+	background-color: #fff;
+    overflow: auto;
+    height: 410px;
+    overflow-x:hidden;
+
+}
+
+.jtmgio-panes > .tab-body > .locked-top-bar{
+    border-bottom: 1px solid #D4D4D4;
+	padding: 0px 0 0 15px;
+	background-color: #fff;
+}
+
+
+.jtmgio-panes > .lock-button-group {
+	position: absolute;
+	right: 15px;
+	top:15px;
+    z-index: 5;
+}
+
+.jtmgio-panes li {
+    font-size: 12px;
+}
+

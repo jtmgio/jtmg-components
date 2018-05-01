@@ -1,0 +1,86 @@
+.dynamicinput{
+	position: relative;
+	width: 370px;
+	padding-right: 10px;
+}
+
+.dynamicinput input{
+    font-size: 13px;
+    height: 17px;
+    margin: 0px;
+    padding: 4px 5px 5px;
+    position: relative;
+    background: #fff;
+	font-family: 'Open Sans', Arial, sans-serif;
+	outline: none;
+	width: 98.5% !important;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	border: none;
+	cursor: pointer;
+	border: 1px solid transparent;
+	
+}
+.dynamicinput input:hover{
+	border: 1px solid #999;
+}
+
+.dynamicinput input.hold{
+	border: 1px solid #fff !important;
+
+}
+.dycancelFader{
+	background-color: #FDFDFD !important;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: .85;
+	top:0;
+	left: 0;
+	z-index: 100;
+	cursor: default;	
+}
+.dyfader{
+	background-color: #e7ffcc !important;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: .85;
+	top:0;
+	left: 0;
+	z-index: 100;	
+	cursor: default;	
+}
+
+.dynamicinput input:focus,
+.dynamicinput input.focus{
+	border: 1px solid #999 !important;
+    -webkit-box-shadow:0 0 5px #f8f8f8 inset;
+   -moz-box-shadow:0 0 5px #f8f8f8 inset;
+    box-shadow:0 0 5px #f8f8f8 inset;
+}
+
+.dynamicinput .dybutton{
+	position: absolute;
+	top:1px;
+	right:4px;
+	padding-right: 0px;
+	border-radius: 0px;
+	display: none;
+}
+
+.dynamicinput .dybutton i{
+	font-size: 16px;
+}
+
+
+.dynamicinput .dybutton.dycancel{
+	right: 37px;
+}
+
+
+
+.dynamicinput .dybutton.dycancel:active{
+	color: inherit;
+}

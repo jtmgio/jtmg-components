@@ -1,0 +1,40 @@
+<ng-template>
+	<div class="select-2-panel-parent">
+		<!--Begin Filter Input-->
+	  <mat-form-field [class.hideFilter]="hideFilter"  class="form-field" floatPlaceholder="never">
+			<input matInput #filterInput (keydown)="_handleKeyDown($event)" [formControl]="formControl" [placeholder]="multiple ? 'Type here to filter this list...' : placeholder" />
+			<mat-icon matSuffix class="inputIcon" (click)="clearFilter()" [class.clearHidden]="!(!multiple || formControl.value)" >{{multiple ? "highlight_off" : "arrow_drop_up"}}</mat-icon>
+		</mat-form-field>
+		<!--End Filter Input-->
+
+		<!--Begin Tagging Buttons-->
+		<div *ngIf="multiple" class="multipleContainer">
+			<div class="tagButtonContainer">
+				<button mat-raised-button color="accent" (click)="tagVisible()">
+					Tag {{formControl.value ? "Filtered" : "All"}}
+				</button>
+				<button mat-raised-button color="accent" (click)="untagVisible()">
+					Untag {{formControl.value ? "Filtered" : "All"}}
+				</button>
+			</div>
+			<hr style="margin-bottom: 0px;" />
+		</div>
+		<!--End Tagging Buttons-->
+
+	  <div class="select-2-panel" [ngClass]="_classList" #panel>
+
+			<!--Begin Options-->
+			<mat-option *ngFor="let opt of _filteredList" [value]="opt.id" [title]="opt.label">
+				{{opt.label}}
+			</mat-option>
+			<!--End Options-->
+
+			<!--Begin No Filter Results Indicator-->
+			<div *ngIf="_filteredList?.length === 0" class="no-results">
+				No Results
+			</div>
+			<!--Begin No Filter Results Indicator-->
+
+	  </div>
+	</div>
+</ng-template>

@@ -1,0 +1,165 @@
+#module-menu {float: left;}
+.jtmgio-nav, .jtmgio-nav * {list-style: none; margin: 0; padding: 0; }
+
+.jtmgio-nav ul {
+	position: absolute;
+	top: -999em;
+}
+
+.jtmgio-nav, .jtmgio-nav > li {float: left; width: auto;}
+
+.jtmgio-nav ul li {width: 100%;}
+.jtmgio-nav li:hover {
+		visibility: inherit;
+}
+
+.jtmgio-nav li {position: relative;}
+.jtmgio-nav li:hover li {display: block;}
+
+.jtmgio-nav li a {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 17px;
+	font-size: 14px;
+	text-decoration: none !important;
+	color: #f1f1f1 !important;
+	cursor: pointer;
+}
+
+.jtmgio-nav li:hover > a {
+	background: #74B844 !important;
+	color: #fff !important;
+}
+
+.jtmgio-nav li:hover ul {
+		left: 0;
+		top: 50px;
+		z-index: 99;
+		background: #74B844;
+		width: 240px;
+}
+
+.jtmgio-nav li li a {
+	height: auto;
+	line-height: 16px;
+	min-height: 16px;
+	padding: 7px 17px;
+	color: #fff !important;
+}
+
+.jtmgio-nav li:hover li:hover > a {background: #69A73D !important;}
+
+
+.jtmgio-nav > li:first-child a, .jtmgio-nav > li:first-child:hover a {
+	width: 16px;
+	overflow: hidden;
+	text-indent: 100px;
+}
+.jtmgio-nav > li:first-child:hover a:hover {background-color: #74B844 !important;}
+.admin-home .jtmgio-nav > li:first-child a,
+.admin-home .jtmgio-nav > li:first-child:hover a {background: url(../../includes/images/new-database/house-bkg.png) no-repeat center -84px !important;}
+.jtmgio-nav > li:first-child a img {display: none;}
+
+
+.jtmgio-nav > li.disabled a,
+.jtmgio-nav > li.disabled:hover a,
+.jtmgio-nav > li.disabled:hover a:hover {cursor: default; opacity: 0.3; background-color: #4a4a4a !important;}
+
+
+/*******************************/
+/*** Styles for Header Right ***/
+/*******************************/
+
+.logout-search-container {float: right; width: 340px; position: relative; margin-right: 10px;}
+a.logout-link, a.jtmgio-profile-list, a.help-link {float: right; margin: 10px 10px 10px 0; display: block;}
+a.logout-link {}
+a.jtmgio-profile-list {margin-right: 105px}
+a.logout-link, a.help-link {height: 30px; line-height: 30px; padding: 0 10px; color: #74B844; text-decoration: none;}
+a.logout-link:hover, a.help-link:hover {color: #69A73D !important; text-decoration: none !important;}
+
+.jtmgio-button.help-link {border-radius: 50% !important}
+.jtmgio-button.help-link img {margin: 0; height: 16px; top: 7px; width: auto !important;}
+
+
+.logout-search-container input[type="text"] {
+	transition: all 0.1s;
+	width: 2px;
+	background: #74B844;
+	position: absolute;
+	padding: 0; border: 0;
+	height: 14px;
+	line-height: 14px;
+	top: 10px;
+	right: 70px;
+	padding: 8px 0;
+	color: #4a4a4a;
+	border-radius: 2px 0 0 2px;
+}
+.logout-search-container button.jtmgio-button,
+div.show-search {
+	position: absolute;
+	top: 10px; right: 10px;
+	font-size: 12px;
+	margin: 0;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	width: 60px;
+	text-align: center;
+}
+
+div.show-search {
+	z-index: 1;
+	background: #74B844;
+	border-radius: 2px;
+	cursor: pointer;
+}
+div.show-search:hover {background: #69A73D;}
+
+.logout-search-container button.jtmgio-button {border-radius: 0 2px 2px 0;}
+
+.logout-search-container input[type="text"].show-input {
+	width: 240px;
+	padding: 8px 10px;
+	background: #f1f1f1;
+}
+
+#header-box {-webkit-transform: translateZ(0);}
+
+/****************/
+/* --- New Styles --- */
+/****************/
+#pbjtmgio-wrap {padding: 20px 0; text-align: center; color: #9d9d9d; font-size: 16px;}
+.jtmgio-brand-container {display: none;}
+
+#header-box {min-width: 728px}
+#header-box .site-width {padding: 0; max-width: 1400px; }
+.site-width {max-width: 1360px; margin: 0 auto; padding: 0 20px;}
+.site-width:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#header-box {
+	background: #4a4a4a;
+	color: #f1f1f1;
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	top: 0;
+	left: 0;
+	overflow: visible;
+	z-index:2000;
+	padding:0;
+	font-size: 13px;
+}
+
+body#minwidth-body {
+	margin: 0;
+	padding: 0;
+	min-width: 768px;
+	padding-top: 50px;
+	background: #f1f1f1;
+}

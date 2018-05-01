@@ -1,0 +1,123 @@
+@import '~@angular/material/theming';
+@import '~@jtmgio/jtmgio-styles/_variables';
+@import '~@jtmgio/jtmgio-styles/_palettes';
+@import '~@jtmgio/jtmgio-styles/_mixins';
+@import './_jtmgio-select-theme';
+$primary: mat-palette($mat-grey, 800);
+$accent: $jtmgio-green-theme;
+$warn: $jtmgio-red-theme;
+$theme: mat-light-theme($primary, $accent, $warn);
+@include jtmgio-select-2-theme($theme);
+
+/**
+ * The max-height of the panel, currently matching mat-select value.
+ * TODO: Check value with MD team.
+ */
+
+$mat-autocomplete-panel-max-height: 216px !default;
+.select-2-panel-parent {
+    @include jtmgio-overlay-menu(8);
+    max-width: none;
+    overflow: hidden;
+    font-size: 16px !important;
+     ::ng-deep {
+        .mat-input-underline.mat-form-field-underline {
+            display: block !important;
+            z-index: 2;
+        }
+        .mat-form-field {
+            height: 40px;
+            width: 100%;
+        }
+        .mat-input-infix.mat-form-field-infix {
+            padding-top: 2px;
+            padding-bottom: 12px;
+            position: relative;
+            z-index: 1;
+            background-color: white;
+        }
+        .mat-input-element {
+            margin: 0 6px;
+        }
+        .mat-form-field-ripple {
+            background-color: #c5c5c5;
+        }
+        .mat-input-placeholder-wrapper {
+            top: -12px;
+            font-size: 12px;
+            padding-top: 0;
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+    }
+}
+
+button {
+    text-transform: uppercase;
+}
+
+.clearHidden {
+    display: none;
+}
+
+.hideFilter {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.inputIcon {
+    position: relative;
+    vertical-align: middle;
+    padding-bottom: 15%;
+    padding-right: 5px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.tagButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.multipleContainer {
+    padding-top: 12px;
+}
+
+.select-2-panel {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    visibility: hidden;
+    max-width: none;
+    max-height: $mat-autocomplete-panel-max-height;
+    position: relative;
+    &.mat-autocomplete-visible {
+        visibility: visible;
+    }
+    &.mat-autocomplete-hidden {
+        visibility: hidden;
+    }
+    .no-results {
+        line-height: 40px;
+        height: 40px;
+        padding: 0 8px;
+        font-size: 12px;
+        color: rgba(0, 0, 0, .4);
+    }
+     ::ng-deep {
+        .mat-option {
+            height: 40px;
+            font-size: 12px;
+            padding: 0 8px;
+            .mat-option-text {
+                line-height: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,584 @@
+@import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
+
+/* =============================================================================
+ANCHOR LINKS
+============================================================================= */
+
+
+
+div.jtmgio-field-btn-group{
+	
+}
+
+div.jtmgio-field-btn-group ul{
+	margin:10px 0 10px -7px;
+	padding:0 0 0 0px;	
+}
+
+div.jtmgio-field-btn-group ul li{
+	list-style:none;
+	display:inline-block;
+	margin:0 0px;
+	border-left:1px solid #ddd;
+	padding: 0 3px 0 0px;
+}
+
+div.jtmgio-field-btn-group ul li:first-child{
+	border:none;	
+}
+div.jtmgio-field-btn-group ul li a{
+	font-size:13px;
+	line-height:20px;
+	text-decoration:underline;
+	padding:3px 7px;
+
+}
+
+div.jtmgio-field-btn-group ul li a:hover{
+	background: none repeat scroll 0 0 #61ACD9 !important;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+}
+
+div.jtmgio-field-btn-group ul li a.delete:hover{
+	background:#FDBABB !important;	
+	color:#D8000C;
+}
+
+/* =============================================================================
+Attention Arrow
+============================================================================= */
+
+div.jtmgio-attention-wrapper{
+	position:relative;
+		
+}
+
+div.jtmgio-attention-arrow{
+	position:absolute;
+	max-width:450px;
+	padding:10px 10px 10px 20px;
+	z-index:100;
+	
+	
+}
+
+div.jtmgio-attention-arrow i{
+	color:#218ACA;
+	font-size:18px;
+	background-position:center;
+
+}
+
+div.jtmgio-attention-arrow p{
+	font-size:18px;	
+	padding:0px;
+	margin:0px;
+	line-height:22px;
+}
+
+div.jtmgio-attention-arrow{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 8px solid #218ACA;
+    border-radius: 10px 10px 10px 10px;
+    color: #333333;
+    margin: 1em 0 3em;
+    padding: 10px 15px;
+	box-shadow:2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+div.jtmgio-attention-arrow.left:after {
+	/*
+    border-color: transparent #FFFFFF;
+    border-width: 9px 21px 9px 0;
+    bottom: auto;
+    left: -21px;
+    top: 29px;
+	*/
+}
+div.jtmgio-attention-arrow:after {
+	/*
+    border-color: #FFFFFF transparent;
+    border-style: solid;
+    border-width: 13px 13px 0;
+    bottom: -13px;
+    content: "";
+    display: block;
+    left: 47px;
+    position: absolute;
+    width: 0;
+	*/
+}
+div.jtmgio-attention-arrow.left:before {
+	/*
+    border-color: transparent #666;
+    border-width: 15px 30px 15px 0;
+    bottom: auto;
+    left: -30px;
+    top: 23px;
+	*/
+}
+div.jtmgio-attention-arrow:before {
+	/*
+    border-color: #666 transparent;
+    border-style: solid;
+    border-width: 20px 20px 0;
+    bottom: -20px;
+    content: "";
+    display: block;
+    left: 40px;
+    position: absolute;
+    width: 0;
+	*/
+}
+div.jtmgio-attention-arrow.left {
+	/*
+    margin-left: 30px;
+	*/
+}
+
+
+
+/* =============================================================================
+TOOLTIPS
+============================================================================= */
+
+.jtmgio-tooltip{
+	position:relative;	
+	padding-left:20px;
+	cursor:pointer;
+}
+
+.jtmgio-tooltip .inner-tooltip{
+	display:none;
+	position:absolute;
+	width:340px;
+	padding:7px 15px 5px 8px;
+	border:2px solid #666;
+	border-radius:5px;
+	background:#FFFFCC;
+	color:#514721;
+	font-weight:normal;
+	line-height:20px;
+	font-size:11px;
+	top:-30px;
+ 	/* Firefox */  
+  	-moz-box-shadow:5px 5px 7px rgba(33,33,33,1);  
+  	/* Safari+Chrome */  
+  	-webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);  
+	  /* Opera */  
+  	box-shadow: 5px 5px 7px rgba(33,33,33,.7);  
+  	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	left:-35px;	
+	cursor:help;	
+	z-index:1;
+}
+
+.jtmgio-tooltip .icon-remove{
+	position:absolute;
+	top:2px;
+	right:7px;	
+	color:#D8000C;
+	font-weight:bold;
+	text-shadow:#999;
+	cursor:pointer;
+	
+}
+
+
+
+/* =============================================================================
+MESSAGES
+============================================================================= */
+
+.jtmgio-msg {
+	padding: 10px;
+	padding-left: 35px;
+	margin:10px 0;
+	font-size:14px;
+	position: relative;
+    z-index: 5;	
+}
+.jtmgio-msg p {
+	font-size: 14px;
+	margin: 0;
+}
+.jtmgio-msg.warning {
+	background: url("/images/ico-warning.gif") 10px 10px no-repeat;
+}
+.jtmgio-msg.info {
+	background: url("/images/ico-info.gif") 10px 10px no-repeat;
+}
+.jtmgio-msg.done, .jtmgio-msg.done, .jtmgio-msg.success {
+	background: url("/images/ico-done.gif") 10px 10px no-repeat;
+}
+.jtmgio-msg.error, .jtmgio-msg.alert {
+	background: url("/images/ico-warning.gif") 10px 10px no-repeat;
+}
+.jtmgio-msg.error ul {
+	margin: 0 0 0 5px !important;
+}
+.jtmgio-msg.error ul li {
+	margin: 5px 0 !important;
+	font-size: 12px;
+	font-weight: bold;
+	color: #DF0000;
+}
+.jtmgio-msg.warning {
+	background-color: #FFF6BF;
+	border: 2px solid #FFD324;
+}
+.jtmgio-msg.warning a {
+	color: #0085CC;
+}
+.msg.warning a:hover, .msg.warning a:active, .msg.warning a:focus {
+	color: #000;
+}
+.jtmgio-msg.info {
+	border: 2px solid #B8E2FB;
+	background-color: #E8F6FF;
+}
+.jtmgio-msg.done, .jtmgio-msg.success {
+	border: 2px solid #BBDF8D;
+	background-color: #EAF7D9;
+}
+.jtmgio-msg.error, .jtmgio-msg.alert {
+	border: 2px solid #FFAEAE;
+	background-color: #FEEBEB;
+}
+.jtmgio-callout {
+	background: #FFF6BF;
+	border: 3px solid #FFD324;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-right: 5px;
+	color: #514721;
+	margin: 1em auto 1.6em auto;
+	padding: 0.8em;
+	width: 95%;
+	text-align: center;
+}
+.jtmgio-callout h3 {
+	margin: 0;
+	padding: 0;
+}
+tr.ui-state-highlight { height: 3.5em; line-height: 1.2em; background:#FFC !important; border:1px solid rgb(93,170,216); }
+
+/* =============================================================================
+BUTTONS
+============================================================================= */
+.jtmgio-button {
+	border: none;
+	background: none;
+}
+.jtmgio-button {
+	margin: 5px 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none !important;
+	padding: .5em 2em .55em;
+	display: inline-block;
+	zoom: 1;
+	vertical-align: baseline;
+	color: #fff;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	background: rgb(93,170,216); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(93, 170, 216, 1) 0%, rgba(124, 181, 214, 1) 50%, rgba(137, 185, 214, 1) 57%, rgba(93, 170, 216, 1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(93, 170, 216, 1)), color-stop(50%, rgba(124, 181, 214, 1)), color-stop(57%, rgba(137, 185, 214, 1)), color-stop(100%, rgba(93, 170, 216, 1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(93, 170, 216, 1) 0%, rgba(124, 181, 214, 1) 50%, rgba(137, 185, 214, 1) 57%, rgba(93, 170, 216, 1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(93, 170, 216, 1) 0%, rgba(124, 181, 214, 1) 50%, rgba(137, 185, 214, 1) 57%, rgba(93, 170, 216, 1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(93, 170, 216, 1) 0%, rgba(124, 181, 214, 1) 50%, rgba(137, 185, 214, 1) 57%, rgba(93, 170, 216, 1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(93, 170, 216, 1) 0%, rgba(124, 181, 214, 1) 50%, rgba(137, 185, 214, 1) 57%, rgba(93, 170, 216, 1) 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5daad8', endColorstr='#5daad8', GradientType=0 ); /* IE6-9 */
+	border: 1px solid #666;
+	border-radius: 5px;
+	outline: none !important;
+}
+
+a.jtmgio-button{ color:#fff !important;}
+.jtmgio-button:active {
+	position: relative;
+	top: 1px;
+}
+.jtmgio-button:hover {
+	background: rgb(205,235,142); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwjtmgioUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0ijtmgioAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0ijtmgioUiIHgyPSIwJSIgeTI9IjEwjtmgioUiPgogICAgPHN0b3Agb2Zjtmgio2V0PSI0NCUiIHN0b3AtY29sb3I9IiNjZGViOGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zjtmgio2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjOWVjYjY5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(top, rgba(205, 235, 142, 1) 44%, rgba(158, 203, 105, 1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(44%, rgba(205, 235, 142, 1)), color-stop(100%, rgba(158, 203, 105, 1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(205, 235, 142, 1) 44%, rgba(158, 203, 105, 1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(205, 235, 142, 1) 44%, rgba(158, 203, 105, 1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(205, 235, 142, 1) 44%, rgba(158, 203, 105, 1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(205, 235, 142, 1) 44%, rgba(158, 203, 105, 1) 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#9ecb69', GradientType=0 ); /* IE6-8 */
+	color: #182111 !important;
+}
+.jtmgio-button:active {
+	position: relative;
+	top: -1px;
+}
+.jtmgio-button.delete {
+	background: #febbbb;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwjtmgioUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0ijtmgioAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0ijtmgioUiIHgyPSIwJSIgeTI9IjEwjtmgioUiPgogICAgPHN0b3Agb2Zjtmgio2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlYmJiYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ1JSIgc3RvcC1jb2xvcj0iI2ZlOTA5jtmgioIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwjtmgioUiIHN0b3AtY29sb3I9IiNmZjVjNWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0ijtmgioIgeT0ijtmgioIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdjtmgio+);
+	background: -moz-linear-gradient(top, #febbbb 0%, #fe9090 45%, #ff5c5c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #febbbb), color-stop(45%, #fe9090), color-stop(100%, #ff5c5c));
+	background: -webkit-linear-gradient(top, #febbbb 0%, #fe9090 45%, #ff5c5c 100%);
+	background: -o-linear-gradient(top, #febbbb 0%, #fe9090 45%, #ff5c5c 100%);
+	background: -ms-linear-gradient(top, #febbbb 0%, #fe9090 45%, #ff5c5c 100%);
+	background: linear-gradient(top, #febbbb 0%, #fe9090 45%, #ff5c5c 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c', GradientType=0 );
+	color: #fff;
+}
+.jtmgio-button.delete:hover {
+	background: #ff3019;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwjtmgioUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0ijtmgioAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0ijtmgioUiIHgyPSIwJSIgeTI9IjEwjtmgioUiPgogICAgPHN0b3Agb2Zjtmgio2V0PSIyOCUiIHN0b3AtY29sb3I9IiNmZjMwMTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zjtmgio2V0PSI2MiUiIHN0b3AtY29sb3I9IiNjZjA0MDQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0ijtmgioIgeT0ijtmgioIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdjtmgio+);
+	background: -moz-linear-gradient(top, #ff3019 28%, #cf0404 62%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(28%, #ff3019), color-stop(62%, #cf0404));
+	background: -webkit-linear-gradient(top, #ff3019 28%, #cf0404 62%);
+	background: -o-linear-gradient(top, #ff3019 28%, #cf0404 62%);
+	background: -ms-linear-gradient(top, #ff3019 28%, #cf0404 62%);
+	background: linear-gradient(top, #ff3019 28%, #cf0404 62%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404', GradientType=0 );
+	color: #444;
+}
+/* =============================================================================
+List
+============================================================================= */
+
+
+.jtmgio-list-inline {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.jtmgio-list-inline li {
+	float: left;
+	list-style: none;
+	list-style-type: none;
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+/* =============================================================================
+Div Tables
+============================================================================= */
+
+div.jtmgio-table {
+	margin: 5px;
+}
+div.jtmgio-row {
+	padding: 20px 10px;
+}
+div.jtmgio-row.jtmgio-odd {
+	background: #fff;
+}
+div.jtmgio-row.jtmgio-even {
+	background: #f7f7f7;
+}
+/* ==============================================================================
+ICONS
+============================================================================= */
+
+
+.jtmgio-icon.doc, .jtmgio-icon.docx, .jtmgio-icon.odt, .jtmgio-icon.openoffice {
+	background: url("/images/docx_win-48_32.png") 0 3px no-repeat;
+}
+.jtmgio-icon.html, .jtmgio-icon.htm {
+	background: url("/images/html-48_32.png") 0 3px no-repeat;
+}
+.jtmgio-icon.xls, .jtmgio-icon.xlsx {
+	background: url("/images/xlsx_win-48_32.png") 0 3px no-repeat;
+}
+.jtmgio-icon.ppt, .jtmgio-icon.pptx {
+	background: url("/images/pptx_mac-48_32.png") 0 3px no-repeat;
+}
+.jtmgio-icon.pdf {
+	background: url("/images/pdf-48_32.png") 0 3px no-repeat;
+}
+.jtmgio-icon.img, .jtmgio-icon.jpeg {
+	background: url("/images/jpeg-48_32.png") 0 3px no-repeat;
+}
+.jtmgio-icon.doc {
+	background: url("/images/docx_win-48_32.png") 0 3px no-repeat;
+}
+.jtmgio-icon.xls, .jtmgio-icon.ods {
+	background: url("/images/xlsx_win-48_32.png") 0 3px no-repeat;
+}
+.jtmgio-icon.mp3 {
+	background: url("/images/mp3-48_32.png") 0 3px no-repeat;
+}
+.jtmgio-icon.zip {
+	background: url("/images/zip-48_32.png") 0 3px no-repeat;
+}
+.jtmgio-icon.forum {
+    background: url("/images/forums-48x48.png") 0 3px no-repeat;
+}
+.jtmgio-icon.article {
+    background: url("/images/article-48x48.png") 0 3px no-repeat;
+}
+.jtmgio-icon.event {
+    background: url("/images/event-48x48.png") 0 3px no-repeat;
+}
+.jtmgio-icon.txt, .jtmgio-icon.rtf, .jtmgio-icon.others, .jtmgio-icon.abstract, .jtmgio-icon.interface {
+	background: url("/images/text-48_32.png") 0 3px no-repeat;
+}
+/* =============================================================================
+PAGINATION
+============================================================================= */
+
+.jtmgio-pager{
+	float:right;
+	text-align:right;
+	height:100px;
+	clear:both;	
+}
+.jtmgio-pager .jtmgio-select{
+	width:50px;
+    display: inline;
+    margin-right: 5px;
+}
+.jtmgio-pager ul{
+	display: inline-block;
+	padding: 0;
+	margin: 10px 0;
+	width: 100%;
+	float:right;
+	text-align:right;
+
+}
+
+.jtmgio-pager ul li{
+	float: left;
+	list-style: none;
+	list-style-type: none;
+	background: none;
+	padding: 0;
+	margin: 0;
+
+}	
+
+
+.jtmgio-pager ul li{
+	cursor:pointer;
+	border:1px solid #CCCCCC;
+	border-left:none;
+	display:block;
+	float:left;
+	list-style:none;
+	line-height:20px;
+	padding:5px 9px;
+	margin:0px 0;	
+	background:#fffafa;
+	color:#0079C2;
+}
+
+.jtmgio-pager ul li:first-child{
+	border-left:1px solid #CCCCCC;	
+	border-bottom-left-radius:3px;
+	border-top-left-radius:3px;
+	
+}
+.jtmgio-pager ul li:last-child{
+	border-bottom-right-radius:3px;
+	border-top-right-radius:3px;
+	
+}
+
+
+.jtmgio-pager ul li:hover, .jtmgio-pager ul li.active{
+	box-shadow: 0 0 5px #888;
+	background: #eeeeee; 
+	background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc)); 
+	background: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%); 
+	background: -o-linear-gradient(top, #eeeeee 0%, #cccccc 100%); 
+	background: -ms-linear-gradient(top, #eeeeee 0%, #cccccc 100%); 
+	background: linear-gradient(top, #eeeeee 0%, #cccccc 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=0 ); 
+	color: #182111;	
+}
+
+
+
+/* =============================================================================
+Modal Sceeen
+============================================================================= */
+
+.jtmgio-modal-lights-out {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 25;
+	background: #fff;
+}
+.jtmgio-modal-box {
+	display: none;
+	width: 800px;
+	padding: 15px;
+	box-shadow: 0px 2px 7px #ddd;
+	-moz-box-shadow: 0px 2px 7px #ddd;
+	-webkit-box-shadow: 0px 2px 7px #ddd;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 10px;
+	padding-left: 35px;
+	margin:10px 0;
+	font-size:14px;
+	border: 2px solid #BBDF8D;
+	background: url("/images/ico-done.gif") 10px 50% no-repeat;	
+	background-color: #EAF7D9;	
+	z-index: 10000;
+}
+.jtmgio-modal-box h2 {
+	letter-spacing: -1px;
+	color: #182111;
+	font-size:18px;
+	font-family: 'Pontano Sans', sans-serif;
+	font-weight:normal;
+}
+
+/* =============================================================================
+Stand Out
+============================================================================= */
+
+div.jtmgio-standout{
+	border:1px solid #666;
+	border-radius:10px;
+	width:90%;
+	margin:0 auto;
+	padding:5px 15px;
+	box-shadow:2px 2px 4px rgba(0, 0, 0, 0.10);
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+	
+}
+
+
+
+/* =============================================================================
+Global Invoice
+============================================================================= */
+
+.jtmgio-notes-container{ width:960px; margin:0 auto;}
+
+div#jtmgio-client-invoices {
+	max-width:960px;
+	margin:0 auto;
+	clear:both;
+}

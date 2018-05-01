@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url("jtmgio-base.css");
+@import url("jtmgio-structure.css");
+/*
+@import url("jtmgio-type.css");
+*/
+@import url("jtmgio-forms.css");
+/* 
+@import url("jtmgio-table.css");
+*/
+@import url("jtmgio-styles.css");
+@import url('jtmgio-buttons-ndb.css');
+@import url('jtmgio-modal.css');
+@import url('jtmgio-tabs.css');
+
+

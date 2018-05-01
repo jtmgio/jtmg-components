@@ -1,0 +1,76 @@
+@import '~@angular/material/theming';
+@import '~@jtmgio/jtmgio-styles/_variables';
+@import '~@jtmgio/jtmgio-styles/_palettes';
+@import '~@jtmgio/jtmgio-styles/_mixins';
+@import './_jtmgio-select-theme';
+$primary: mat-palette($mat-grey, 800);
+$accent: $jtmgio-green-theme;
+$warn: $jtmgio-red-theme;
+$theme: mat-light-theme($primary, $accent, $warn);
+@include jtmgio-select-2-theme($theme);
+.formField {
+    @include jtmgio-overlay-menu(8);
+    overflow: hidden;
+    &.overlayOpen.multiple {
+        width: 300px;
+        max-width: none;
+    }
+     ::ng-deep {
+        .mat-input-underline.mat-form-field-underline {
+            display: block !important;
+            z-index: 2;
+        }
+        .mat-input-flex.mat-form-field-flex {
+            position: relative;
+            z-index: 1;
+            background-color: white;
+        }
+        .mat-form-field {
+            height: 40px;
+            width: 100%;
+        }
+        .mat-input-infix.mat-form-field-infix {
+            padding-top: 2px;
+            padding-bottom: 12px;
+        }
+        .mat-input-element {
+            margin: 0 6px;
+        }
+        .mat-form-field-ripple {
+            background-color: #c5c5c5;
+        }
+        .mat-input-placeholder-wrapper {
+            top: -12px;
+            font-size: 12px;
+            padding-top: 0;
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+    }
+    &.overlayClosed {
+        box-shadow: none;
+         ::ng-deep {
+            .mat-input-flex.mat-form-field-flex {
+                box-sizing: border-box;
+                border: 1px solid lightgrey;
+                background-color: white;
+            }
+            .mat-input-underline.mat-form-field-underline {
+                background-color: lightgrey;
+            }
+        }
+    }
+}
+
+.downArrow {
+    padding-top: 2px;
+    padding-right: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.baseInput {
+    text-overflow: ellipsis;
+    margin: 0 6px;
+    cursor: pointer;
+}

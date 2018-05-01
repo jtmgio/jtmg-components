@@ -1,0 +1,75 @@
+@import '~@angular/material/theming';
+@import '~@jtmgio/jtmgio-styles/_mixins';
+@import '~@jtmgio/jtmgio-styles/_palettes';
+@import '~@jtmgio/jtmgio-styles/_styles';
+@import './app/components/select/_jtmgio-select-theme';
+html,
+body {
+    background: #f1f1f1;
+}
+
+nav {
+    display: block;
+    margin-bottom: 20px;
+}
+
+@include mat-core();
+$primary: mat-palette($mat-grey, 800);
+$accent: $jtmgio-green-theme;
+$warn: $jtmgio-red-theme;
+$theme: mat-light-theme($primary, $accent, $warn);
+@include angular-material-theme($theme);
+@include jtmgio-select-2-theme($theme);
+$primary: mat-palette($mat-grey, 800);
+$accent: mat-palette($mat-green, 600, A100, A400);
+$warn: mat-palette($mat-red, 600);
+$theme: mat-light-theme($primary, $accent, $warn);
+$background: map-get($theme, background);
+$jtmgio-btn-green: #6cc24a;
+$jtmgio-tr-hover:#EDFFE4;
+@mixin button() {
+    color: #fff;
+    &.mat-raised-button {
+        box-shadow: none;
+    }
+}
+
+button.jtmgio-raised-button {
+    font-size: 12px;
+    background-color: $jtmgio-green;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@mixin pager-mat-select() {
+    display: none;
+}
+
+pre {
+    font-size: 14px;
+    line-height: 1.2em;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    height: 1%;
+    width: 50%;
+    display: block;
+    clear: both;
+    color: #555555;
+    padding: 0px 0 15px 0;
+    margin: 30px 0px 30px 0px;
+    background: #ccc;
+    border: solid 1px #000;
+    border-radius: 4px;
+}
+
+code {
+    font-size: 14px;
+    line-height: 1.2em;
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    display: inline;
+    color: #555555;
+}

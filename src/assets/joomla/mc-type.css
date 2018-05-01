@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Pontano+Sans);
+
+body								{}
+
+h1, h2, h3, h4, h5, h6				{}
+h1, h2								{}
+h1, h2, h3, h4						{}
+h3, h4, h5, h6						{}
+h1									{}
+h2									{}
+h3									{}
+h4									{}
+h5									{}
+h6									{}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child						{}
+
+p, pre, address						{}
+small								{}
+abbr, code, kbd,
+samp, small, var					{}
+ul, ol, dl, dialog					{}
+li ul, li ol, ul ul, ol ol			{}
+li h1, li h2, li h3,
+li h4, li h5, li h6,
+li p								{}
+form, legend, label					{}
+legend								{}
+table								{}
+caption								{}
+hr									{}
+
+
+/* 
+	jtmgio TYPOGRAPY
+*/
+
+p.jtmgio-paragraph{
+	font-size:13px;
+	line-height:18px;
+	margin:10px;
+		
+}
+p.jtmgio-sub-title{
+	/*font-size:14px;	*/
+}
+header{
+	margin:0 0 10px 0;	
+	
+}
+hgroup{
+	
+}
+
+header h1,header  h2,header h3,header h4,header h5,header h6{
+	margin:0;
+	padding:0;
+	background:none;
+	border:none;	
+	font-family: 'Pontano Sans', sans-serif;
+	
+}
+
+header h1{
+	
+}
+
+header h2{
+	display: block;
+	padding: 10px 10px 2px;
+	border-bottom: 2px solid #9ECB69;
+	margin: 0 0 10px 0px;
+	font-size: 20px;
+	color: #0079C2
+}
+
+header h3{
+	
+	
+}
+
+header p, header ul, div.jtmgio-paragraph{
+	font-size: 14px;
+	line-height: 20px;
+	padding: 0 10px;
+	margin: 10px 0;
+}
+
+header p.jtmgio-notice{
+	text-align:right;
+	font-size:11px;
+	color:#666;	
+}
+header ul{
+	margin-left:20px;
+}
+
+div#wrap h3{
+	color:#191919;	
+	font-size:16px;
+	margin:10px 0px 5px;
+}
+
+.jtmgio-highlight{
+	background: #FF9;
+	padding:2px 5px;
+		
+}
+hr.jtmgio-hr{
+	background:#9ECB69;
+	border:none;
+	margin:10px 0;
+	display:block;
+	
+}
+
+.jtmgio-header-blue{ color:#0079C2;}
+

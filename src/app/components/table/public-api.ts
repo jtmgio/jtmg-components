@@ -1,0 +1,13 @@
+export * from "./itable.definition";
+export * from "./jtmgio-table.module";
+export * from "./jtmgio-paginator/jtmgio-paginator";
+export * from "./jtmgio-paginator/client.datasource";
+export * from "./jtmgio-paginator/http.datasource";
+export * from "./jtmgio-paginator/icolumns.definition";
+export * from "./jtmgio-paginator/jtmgio-paginator.module";
+export * from "./jtmgio-paginator/jtmgio-paginator.intl";
+export * from "./jtmgio-table";
+export * from "./jtmgio-table-header";
+export * from "./jtmgio-paginator/jtmgio-paginator.abstract";
+export * from "./table.module";
+export { MatSort, MatTable } from "@angular/material";

@@ -1,0 +1,145 @@
+.whiteout{
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 1000;
+	width:100%;
+	height: 100%;
+	background: #fff;
+}
+
+.modal-temp{
+	position: absolute;
+	border:1px solid #666;
+	border-radius: 4px;
+	z-index: 1001;
+	background: #fff;
+	box-shadow: 0px 0px 19px rgba( 0, 0, 0,0.3);
+	display: none;
+	width: 50%;
+	font-size: 12px;
+}
+.modal-temp.lg{
+	width:75%;
+	max-width: 900px
+}
+.modal-temp.fixed{
+	position: fixed;
+}
+.modal-temp .modal-header,
+.modal-temp .modal-interior,
+.modal-temp .modal-footer{
+	padding:10px 10px;
+}
+
+.modal-temp .modal-header,
+.modal-temp .modal-footer{
+	background: #f8f8f8;
+	border-color: #333;
+}
+
+.modal-temp .modal-header{
+	border-bottom:1px solid;	
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-size:14px;
+}
+.modal-temp .modal-header *{ font-size: 14px;}
+.modal-temp .modal-interior *{ font-size: 12px !important;}
+.modal-temp .modal-footer *{ font-size:13px; }
+.modal-temp .modal-footer{
+	border-top:1px solid;	
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+
+.modal-temp.interior-shadows .modal-header,
+.modal-temp.interior-shadows .modal-footer{
+	
+}
+
+
+
+.modal-temp .modal-footer .btn-container{
+	float: right;
+	clear:both
+}
+
+.modal-temp .modal-interior{
+	max-height: 500px;
+	overflow: auto;
+}
+
+.modal-temp .modal-interior p{
+	margin:5px 0px;
+	padding:0;
+	
+}
+.modal-temp .modal-interior ul,
+.modal-temp .modal-interior li{
+	margin:0;
+	padding:0;
+	list-style: none;
+	
+}
+.modal-temp .modal-interior ul{
+	margin:10px;
+}
+
+.modal-temp .modal-interior input[ type="checkbox"]{
+	width:10px;
+	
+}
+
+
+.modal-temp .col{
+	width:50%;
+}
+
+.modal-temp .attachments{
+	margin:5px 0;
+	padding:0px;
+}
+.modal-temp .attachments li{
+	float:left;
+	display: inline-block;
+	margin:0 2px;
+}
+
+
+
+.modalWindow input{
+	position: relative;
+	top: -1px;
+	margin:0px;
+	padding:5px;
+	width:96%;
+	height: 17px;
+	border: 1px solid #bfbfbf;
+	border-radius: 6px;
+	font-size: 13px;
+}
+
+
+
+
+.modalWindow .btns-container{
+	float: right;
+	padding:10px;
+
+}
+
+.modalWindow .btns-container ul,
+.modalWindow .btns-container li{
+	margin:0;
+	padding: 0;
+	list-style: none;
+
+}
+
+.modalWindow .btns-container li{
+	display: inline-block;
+	float: left;
+	margin:0 1px;
+}

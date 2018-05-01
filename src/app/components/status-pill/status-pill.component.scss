@@ -1,0 +1,62 @@
+@import '~@jtmgio/jtmgio-styles/_forms';
+:host {
+    /deep/ .status_pill--container {
+        background: none;
+        .status_pill--circle {
+            display: block;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            border-radius: 50%;
+            margin: 5px;
+        }
+        /deep/ mat-select {
+            border-radius: 20px;
+            background: #f1f1f1;
+            width: initial;
+            height: 25px;
+            .mat-select-trigger {
+                height: 15px;
+                min-width: auto;
+            }
+            .mat-select-arrow:focus,
+            .mat-select-arrow:active {
+                color: #4A4A4A;
+            }
+            div.mat-select-arrow {
+                color: #4A4A4A;
+                margin: 0px 10px 0px 0px;
+                border-radius: 25%;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid;
+                @media screen and (min-width: 0\0) {
+                    position: absolute;
+                    margin: 0px -15px;
+                }
+            }
+            .mat-select-placeholder.mat-floating-placeholder {
+                display: none;
+            }
+            span.mat-select-value-text {
+                color: #4A4A4A;
+                font-size: 14px;
+                padding: 7px;
+            }
+            div.mat-select-value {
+                position: relative;
+                display: inherit;
+                margin-left: 10px;
+                padding: 5px 8px;
+            }
+            &[aria-disabled="true"] {
+                div.mat-select-arrow {
+                    display: none;
+                }
+                span.mat-select-value-text {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,171 @@
+
+ul.dropmenu {
+	position: relative;
+	margin: 0px 0 0 0;
+	padding: 0px 0px 0px 0px;
+	display:block;
+	height: 35px;
+	font-size: 16px;
+	font-family: "Helvetica", Arial, sans-serif;
+	font-weight:bold;
+	width:80%;
+}
+.dropmenu li {
+	position: relative;
+	list-style: none;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	background-repeat:no-repeat;
+	
+}
+.dropmenu li a {
+	height: 35px;
+	padding: 13px 20px 0px 15px;
+	display: block;
+	cursor: point;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: "Helvetica", Arial, sans-serif;
+	background-repeat:no-repeat;
+	background-position:center left;
+}
+
+.dropmenu li li a {
+	height: 30px;
+	padding: 9px 30px 0px 25px;
+	color:#fff;
+	text-decoration:none;
+}
+.dropmenu li span {
+	display: block;
+	float: left;
+	height: 20px;
+	width: 24px;
+	position: absolute;
+	top: 10px;
+	left: 5px;
+	background-repeat:no-repeat;
+}
+.dropmenu li a:hover span {
+}
+.dropmenu li:hover ul, .dropmenu li:hover div {
+	display: block;
+}
+.dropmenu ul {
+    z-index: 999;
+	position: absolute;
+	display: none;
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #ccc;
+	background: rgb(93,170,216); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(93, 170, 216, 1) 0%, rgba(124, 181, 214, 1) 50%, rgba(137, 185, 214, 1) 57%, rgba(93, 170, 216, 1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(93, 170, 216, 1)), color-stop(50%, rgba(124, 181, 214, 1)), color-stop(57%, rgba(137, 185, 214, 1)), color-stop(100%, rgba(93, 170, 216, 1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(93, 170, 216, 1) 0%, rgba(124, 181, 214, 1) 50%, rgba(137, 185, 214, 1) 57%, rgba(93, 170, 216, 1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(93, 170, 216, 1) 0%, rgba(124, 181, 214, 1) 50%, rgba(137, 185, 214, 1) 57%, rgba(93, 170, 216, 1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(93, 170, 216, 1) 0%, rgba(124, 181, 214, 1) 50%, rgba(137, 185, 214, 1) 57%, rgba(93, 170, 216, 1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(93, 170, 216, 1) 0%, rgba(124, 181, 214, 1) 50%, rgba(137, 185, 214, 1) 57%, rgba(93, 170, 216, 1) 100%); /* W3C */
+ 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5daad8', endColorstr='#5daad8', GradientType=0 ); /* IE6-9 */
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.dropmenu ul li {
+	border: 0;
+	float: none;
+	cursor:pointer;
+}
+.dropmenu  li li{
+	cursor:pointer !important;	
+}
+.dropmenu ul a {
+	border-top: 1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	border-bottom: 0;
+	white-space: nowrap;
+	display:block;
+	color: #0657AD;
+	text-decoration: underline;
+	text-transform: none;
+	border-radius:none;
+
+}
+.dropmenu ul a:first {
+ border-top:none;
+}
+.dropmenu ul li:last-child a {
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+.dropmenu a:hover, .dropmenu a.selected {
+
+	background:url("../images/ui-bg_gloss-wave_50_81bc3c_500x100.png") repeat-x scroll 50% 50% #58A7D6;
+	cursor:pointer !important;	
+ 
+}
+.dropmenu li.disabled a{
+	color:#B4CCCC;	
+	background:none;
+	cursor:default !important;  
+}
+
+a.selected span {
+}
+.dropmenu ul a:hover {
+	color:#fff !important;
+	text-decoration: none;
+
+ background:url("../images/ui-bg_gloss-wave_50_81bc3c_500x100.png") repeat-x scroll 50% 50% #58A7D6;
+ 
+}
+.dropmenu ul a.jtmgio-menu-radius {
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+
+.dropmenu div ul {
+	position: relative;
+	display: block;
+}
+.dropmenu li div {
+	background: #FFFFFF url(images/gradient.png) repeat-x scroll 0 0;
+	border: 1px solid #ccc;
+	padding: 5px;
+	display: none;
+	position: absolute;
+}
+.dropmenu li div ul {
+	border: none;
+	background: none;
+	position: relative !important;
+}
+.dropmenu li div a {
+	border: none;
+	border-bottom: 1px solid #ccc;
+}
+.dropmenu li div div {
+	display: block;
+	position: relative;
+	background: none;
+	border: none;
+}
+.dropmenu li div div a {
+	display: inline;
+	border: none;
+	color: #666;
+	text-decoration: underline;
+	padding: 0px;
+	margin: 0px;
+	text-transform: none;
+}
+.dropmenu li div div a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+
+ul#jtmgio-status-menu{
+	width:225px;
+	margin-top:-10px;
+
+}

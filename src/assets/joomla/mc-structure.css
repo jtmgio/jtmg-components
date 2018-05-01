@@ -1,0 +1,29 @@
+.jtmgio-content {
+	width: 100%;
+}
+.jtmgio-col50 {
+	float: left;
+	width: 49%;
+}
+.jtmgio-col33 {
+	float: left;
+	width: 30%;
+}
+.jtmgio-col33.center {
+	padding: 0 2%;
+}
+.jtmgio-col25 {
+	float: left;
+	width: 24%;
+}
+.jtmgio-col75 {
+	float: left;
+	width: 73%;
+}
+.jtmgio-col68 {
+	float: left;
+	width: 67%;
+}
+.jtmgio-sidebar {
+	margin: 0 10px 0 0;
+}

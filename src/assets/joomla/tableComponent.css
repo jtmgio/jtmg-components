@@ -1,0 +1,1032 @@
+/*check test */
+
+div.tc{
+/*
+should be set by overide
+margin:30px 0;
+min-width: 960px;
+*/
+width:100%;
+}
+
+#component-wrapper{
+
+}
+
+/*
+random
+*/
+div.jtmgio-table-wrap{
+border: none !important;
+
+}
+.relative{ position: relative;}
+
+/*
+buttons
+*/
+div.tc a.btn{
+display: inline-block;
+margin:0 3px;
+border: 1px solid #8a8a8a;
+border-radius: 4px;
+background: #ededed;
+background: -moz-linear-gradient(top,  #ededed 0%, #eeeeee 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ededed));
+background: -webkit-linear-gradient(top,  #ffffff 0%,#ededed 100%);
+background: -o-linear-gradient(top,  #ffffff 0%,#ededed 100%);
+background: -ms-linear-gradient(top,  #ffffff 0%,#ededed 100%);
+background: linear-gradient(to bottom,  #ffffff 0%,#ededed 100%);
+text-shadow: 0 1px 0 #fff;
+font-size: 13px;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+color:#0079C2;
+}
+
+div.tc a.btn.btn-small{
+padding:0 8px;
+height:24px;
+line-height: 24px;
+}
+
+div.tc a.btn:hover{
+background: #ffffbf;
+color:#005589;
+text-decoration: none !important;
+text-shadow: none;
+cursor: pointer;
+
+}
+
+div.tc a.btn:active{
+background: #c7c7c7;
+box-shadow: inset 0 1px 5px	rgba(0,0,0,0,5);
+text-shadow: none;
+}
+
+div.tca.btn:active span{
+position: relative;
+top:1px;
+}
+
+div.tc a.btn.disabled{
+background: #ededed;
+background: -moz-linear-gradient(top,  #ededed 0%, #eeeeee 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#ffffff));
+background: -webkit-linear-gradient(top,  #ededed 0%,#ffffff 100%);
+background: -o-linear-gradient(top,  #ededed 0%,#ffffff 100%);
+background: -ms-linear-gradient(top,  #ededed 0%,#ffffff 100%);
+background: linear-gradient(to bottom,  #ededed 0%,#ffffff 100%);
+color:#b8b8b8 !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 );
+}
+
+div.tc a.btn.disabled span{
+top: 0px !important;
+}
+
+div.tc a.btn.btn-small i{
+position: relative;
+top:7px;
+font-size: 17px;
+}
+
+/*
+button bar
+*/
+
+div.tc section#button-bar{
+margin-bottom: 20px;
+padding:10px;
+height: 28px;
+border:1px solid #bfbfbf;
+border-radius: 6px;
+background: #e6e6e6;
+white-space:nowrap;
+position: relative;
+}
+
+div.tc section.bar-section{
+margin-bottom: 20px;
+border:1px solid #bfbfbf;
+border-radius: 6px;
+background: #e6e6e6;
+/*white-space:nowrap;  --removed to fix issue with the red x's on edit columns dropdown on main advanced search screen */
+position: relative;
+}
+
+
+
+div.tc section#button-bar div.button-bar-item{
+float:left;
+
+
+margin:0 5px 0 0;
+white-space:nowrap;
+}
+
+
+
+div.tc section#button-bar div.button-bar-item.right{
+position: absolute;
+right:0px;
+
+}
+
+div.tc section#button-bar ul{
+margin:0;
+padding:0;
+}
+
+div.tc section#button-bar ul li{
+display: inline-block;
+float:left;
+margin:0;
+margin:0 5px;
+padding:0;
+list-style: none;
+}
+
+div.tc section#button-bar ul.pillset{
+margin:0;
+padding:0;
+}
+
+
+div.tc section#button-bar ul li.pill{
+float:left;
+margin:0;
+padding:0;
+}
+
+
+div.tc section#button-bar ul li.pill a{
+margin:0px;
+}
+
+div.tc section#button-bar ul li.pill.first a{
+border-right: none;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+
+div.tc section#button-bar ul li.pill.middle a{
+border-radius:0px;
+border-right:none;
+}
+
+div.tc section#button-bar ul li.pill.last{
+margin-right:5px;
+}
+
+div.tc section#button-bar ul li.pill.first{
+margin-left:5px;
+}
+
+div.tc section#button-bar ul li.pill.last a{
+
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+}
+
+div.tc section#button-bar input[ type="text" ]{
+position: relative;
+top: -1px;
+margin:0px;
+padding:5px;
+width:235px;
+height: 17px;
+border: 1px solid #bfbfbf;
+border-radius: 6px;
+font-size: 13px;
+}
+
+
+/*
+label
+*/
+
+
+div.tc section#button-bar .jtmgio-button-group-label span{
+line-height: 25px;
+}
+
+/*
+button bar
+*/
+
+
+/*
+table styles
+*/
+
+
+div.tc table,div.tc tr,div.tc th,div.tc td,div.tc caption{
+margin:0;
+padding: 0;
+vertical-align: baseline;
+font: inherit;
+font-size: 100%;
+}
+
+
+table {
+	width: 100%;
+	border-spacing: 0;
+	*border-collapse: collapse; /* IE7 and lower */
+}
+
+div.tc table {
+	border: solid #bfbfbf 1px;
+	border-radius: 6px 6px 0 0;
+	color:#333;
+	font-size: 12px;
+	font-family: 'Open Sans', 'Arial', 'sans-serif';
+
+}
+
+div.tc table tr:hover {
+	background: #fbf8e9;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+div.tc table td, div.tc table th {
+	padding: 10px;
+	border-top: 1px solid #ccc;
+	border-left:none !important;
+	text-align: left;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+div.tc table tr:first-child td{
+border-top: none !important;
+
+}
+div.tc table th {
+	padding:0;
+	height: 20px;
+	border-top: none;
+	border-bottom: none;
+background-image: url('/ui-v1/js/components/backbone/table/assets/images/table-header-background.png');
+	background-position: 0 0px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 29px;
+	border:none !important;
+	overflow: hidden;
+	white-space: nowrap
+}
+
+
+div.tc table th div{
+padding:0px 10px 0 10px;
+}
+
+div.tc table th:hover{
+	background-position: 0 -58px;
+cursor:pointer;
+
+}
+
+div.tc table th div{
+background-image: url('/ui-v1/js/components/backbone/table/assets/images/right-shadows-sprite.png');
+background-position: 100% 0px;
+background-repeat: no-repeat;
+}
+
+
+div.tc table th.active div{
+background-image: url('/ui-v1/js/components/backbone/table/assets/images/right-shadows-sprite.png');
+background-position: 100% -58px;
+background-repeat: no-repeat;
+
+}
+div.tc table th:last-child div{
+background: none;
+}
+
+div.tc table th.active{
+	background-position: 0 -87px;
+}
+
+div.tc table th:hover div{
+	background-position: 0 -87px;
+}
+
+
+
+div.tc table th.no-state {
+	background-position: 0 0px !important;
+	cursor: default !important;
+}
+
+div.tc table th.no-state div{
+background-position: 100% 0px !important;
+background-repeat: no-repeat !important;
+
+}
+
+
+div.tc table th i.sort{
+position: relative;
+top: 1px;
+display: inline-block;
+margin-left: 5px;
+width: 10px;
+height: 12px;
+background-image: url('/ui-v1/js/components/backbone/table/assets/images/sorting.png');
+background-repeat: no-repeat;
+opacity: .33;
+
+
+}
+div.tc table th i.sort.sort-default{
+background-position: 0 0;
+}
+
+
+div.tc table th:hover i.sort{
+opacity: 1;
+}
+
+
+div.tc table th i.sort.sort-asc{
+background-position: 0 -100px;
+}
+
+
+div.tc table th i.sort.sort-desc{
+background-position: 0 -200px;
+}
+
+
+
+
+div.tc table td:first-child, div.tc table th:first-child {
+	border-left: none;
+}
+
+div.tc table th:first-child {
+	-webkit-border-radius: 6px 0 0 0;
+	-moz-border-radius: 6px 0 0 0;
+	border-radius: 6px 0 0 0;
+}
+
+div.tc table th:last-child {
+	-webkit-border-radius: 0 6px 0 0;
+	-moz-border-radius: 0 6px 0 0;
+	border-radius: 0 6px 0 0;
+
+}
+
+
+div.tc table th:only-child{
+	-webkit-border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+}
+
+div.tc table th.checkbox{
+}
+
+/* this is for advanced search first table header with dropdown and checkbox */
+div.tc table th.first.checkbox div{
+padding-left:29px;
+}
+
+div.tc table .checkbox div{
+padding: 0px 32px 0 10px;
+background-position: 100% 0px;
+cursor: default;
+
+}
+
+div.tc table .checkbox:hover,
+div.tc table .checkbox:hover div{
+background-position: 100% 0px;
+
+}
+
+div.tc table td.checkbox div {
+padding: 0px 0px 0 23px;
+}
+
+
+div.tc table td i.reorder{
+position: absolute;
+top: 0px;
+left:0px;
+display: inline-block;
+margin-right: 5px;
+width: 10px;
+height: 16px;
+background-image: url('/ui-v1/js/components/backbone/table/assets/images/reorder.png');
+background-repeat: no-repeat;
+opacity: .33;
+
+}
+
+div.tc table td:first-child:hover i.reorder{
+opacity: 1;
+}
+
+
+div.tc tbody tr:nth-child(even), div.tc tbody tr.even {
+	background: #f6f6f6;
+}
+div.tc tbody tr.odd{
+background: #fff;
+}
+
+
+
+div.tc tbody tr:hover {
+	background: #ffffbf;
+}
+
+
+div.tc table td, .ui-draggable-dragging{
+padding:0 10px;
+height:40px;
+border-bottom: #eee;
+vertical-align: middle;
+}
+
+
+div.tc table tr:last-child td:first-child {
+	-webkit-border-radius: 0 0 0 6px;
+	-moz-border-radius: 0 0 0 6px;
+	border-radius: 0 0 0 6px;
+}
+
+div.tc table tr:last-child td:last-child {
+	-webkit-border-radius: 0 0 6px 0;
+	-moz-border-radius: 0 0 6px 0;
+	border-radius: 0 0 6px 0;
+}
+
+/* Removed so links will inherit
+div.tc table td a{
+color:#0079c2;
+
+}
+
+div.tc table td a:hover{
+color:#005589;
+text-decoration: underline;
+
+}
+*/
+
+
+div.tc table td{
+	max-width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+}
+/*dragging*/
+
+
+tr.row-hover{
+width: 50% !important;
+	border:1px solid #CCCCCC;
+	background: #ffffbf !important;
+
+}
+tr.row-hover td{
+padding:0 10px;
+height:40px;
+border-bottom: #eee;
+	background: #ffffbf !important;
+	color:#333;
+vertical-align: middle;
+	font-size: 12px;
+	font-family: 'Open Sans', 'Arial', 'sans-serif';
+
+}
+tr.row-hover td:first-child{
+border-left:none;
+
+}
+
+.ui-draggable-dragging td:last-child{
+	border-right:1px solid #CCCCCC;
+
+}
+
+
+
+tr.ui-state-highlight,
+tr.ui-state-highlight td {
+border: none;
+}
+
+td.placeholder{
+height:5px;
+border: none;
+vertical-align: top
+background: #fff !important;
+
+}
+
+td.placeholder div{
+width: 100%;
+height: 2px;
+
+}
+
+.on-drop-color{
+background: #e7ffcc !important;
+
+}
+
+#table{
+position: relative;
+
+}
+
+
+
+.msg{
+position: absolute;
+top: 	0px;
+z-index: 1000;
+display: none;
+padding:15px 30px;
+width: 70%;
+border:2px solid #c7c7c7;
+background: #f6f6f6;
+font-size: 14px;
+}
+
+.msg i{
+color:#c7c7c7;
+
+}
+
+
+/* In cell edits */
+
+i.pencil-icon{
+position: relative;
+top:1px;
+display: inline-block;
+margin-left: 5px;
+width: 16px;
+height: 16px;
+background: url('/ui-v1/js/components/backbone/table/assets/images/pencil.png') center right no-repeat;
+opacity: .33;
+}
+
+i.pencil-icon:hover{
+opacity: 1;
+}
+
+
+
+/* in cell edits */
+
+
+
+
+/* flyout */
+
+
+i.flyout-icon{
+
+background: url('/ui-v1/js/components/backbone/table/assets/images/flyout.png') left top no-repeat;
+height: 10px;
+width: 10px;
+display: inline-block;
+margin-left: 4px;
+position: relative;
+top: 1px;
+opacity: .33;
+
+}
+.flyout-trigger:hover i.flyout-icon{
+opacity: 1;
+}
+
+div.flyout{
+position: relative;
+	color:#333;
+	font-size: 12px;
+	font-family: 'Open Sans', 'Arial', 'sans-serif';
+}
+
+div.flyout-container{
+position: absolute;
+top:-76px;
+right: -310px;
+z-index: 10;
+display: none;
+padding:15px;
+min-width: 320px;
+min-height: 80px;
+border:4px solid #979797;
+border-radius: 8px;
+background: #fff;
+background: #f8f8f8;
+box-shadow: 0px 2px 3px black;
+}
+
+div.flyout-container span.arrow-head{
+position: absolute;
+z-index: 9999;
+display: block;
+width: 100px;
+height: 40px;
+
+
+}
+
+div.flyout-container span.arrow-head.left{
+top: 60px;
+left: -46px;
+background: url('/ui-v1/js/components/backbone/table/assets/images/flyout-tab-left.png') left top no-repeat;
+}
+
+div.flyout h1{
+margin:0;
+	margin:5px 0;
+padding: 0;
+	color:#333;
+font-size: 16px;
+	font-family: 'Open Sans', 'Arial', 'sans-serif';
+}
+div.flyout p{
+margin:0;
+	margin:5px 0;
+padding: 0;
+font-size: 12px;
+
+
+}
+
+div.flyout ul, div.flyout ol{
+margin:0;
+	margin:5px 20px;
+padding: 0;
+	color:#333;
+font-size: 12px;
+
+}
+div.flyout li{
+padding: 2px;
+}
+
+div.flyout .green{
+color:#528023;
+
+}
+
+div.flyout .red{
+color:#c20000;
+
+}
+
+
+/*tooltip*/
+
+div.tooltip-container{
+position: relative;
+
+}
+
+div.tooltip-container div.tooltip{
+position: absolute;
+top:-60px;
+display: none;
+padding:10px 10px;
+max-width: 350px;
+border:1px solid #979797;
+border-radius: 4px;
+background: #ffffbf;
+box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
+white-space: normal !important;
+min-width: 100px;
+z-index: 9999;
+}
+div.tooltip-container div.tooltip p{
+margin: 0;
+padding: 0;
+font-weight: bold;
+font-size: 11px;
+line-height: 20px;
+}
+div.tooltip-container div.tooltip-arrow{
+position: absolute;
+bottom: -16px;
+left:30px;
+display: block;
+width: 20px;
+height: 16px;
+background: url('/ui-v1/js/components/backbone/table/assets/images/trunc-tip.png') left top no-repeat;
+}
+
+/*bar sections*/
+div.tc {
+}
+
+section.bar-section {
+min-width:960px;
+width:100%;
+}
+
+div.bar-item {
+}
+
+
+div.bar-container {
+float:left;
+padding:10px;
+height:28px;
+line-height:30px;
+}
+
+div.bar-container p {
+margin:0;
+padding:0;
+color:#A0A0A0;
+text-shadow:0 1px 0 rgba(255,255,255,0.5);
+font-size:14px;
+}
+
+span.col {
+display:inline-block;
+float:left;
+margin:0 5px;
+}
+
+span.col.push-right {
+float:right;
+}
+
+
+/*minimum tc*/
+
+div.min-tc table.table-component{
+border:none;
+border: 1px solid #bfbfbf;
+box-shadow: none;
+}
+
+div.min-tc table.table-component thead{
+height: 28px;
+}
+
+div.min-tc table.table-component th{
+margin:0;
+border: none;
+padding: 0;
+background: #e6e6e6  !important;
+border-top: 1px solid #bfbfbf;
+border-bottom: 1px solid #bfbfbf;
+text-align: left;
+position: relative;
+padding:0 0 0 5px;
+line-height: 28px;
+border-left: 1px solid #bfbfbf;
+}
+
+
+div.min-tc table.table-component th.no-state{
+background: #e6e6e6  !important;
+cursor: default !important
+}
+div.min-tc table.table-component thead tr:hover{
+background: none;
+
+}
+div.min-tc table.table-component  tr th.first{
+background: #e6e6e6 !important;
+cursor: default !important;
+
+border-left: none;
+}
+
+div.min-tc table.table-component  tr th:hover,
+div.min-tc table.table-component  tr th.active{
+background: none repeat scroll 0 0 #FFFFBF;
+cursor: pointer;
+}
+
+div.min-tc table.table-component  thead tr i.sort{
+	background-image: url("/ui-v1/js/components/backbone/table/assets/images/sorting.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 12px;
+	margin-left: 5px;
+	opacity: 0.33;
+	position: relative;
+	top: 1px;
+	width: 10px;
+}
+div.min-tc table.table-component thead tr th:hover i.sort{
+opacity: 1;
+}
+div.min-tc table.table-component  thead tr i.sort.sort-asc {
+	background-position: 0 -100px;
+}
+div.min-tc table.table-component  thead tr i.sort.sort-desc {
+	background-position: 0 -200px;
+}
+
+
+div.min-tc table.table-component  tbody tr:nth-child(even){
+background: #f6f6f6;
+
+}
+div.min-tc table.table-component  tbody tr td{
+padding:5px 5px;
+max-width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+div.min-tc table.table-component  tbody tr:nth-child(even) td{
+border-top: 1px solid #bfbfbf;
+/*
+removed to fix importing styles on mini table component
+border-bottom: 1px solid #bfbfbf;
+*/
+}
+
+div.min-tc table.table-component  tbody tr:last-child td{
+border-bottom: none;
+}
+
+div.min-tc table.table-component thead tr:first-child th div{
+	border: none;
+}
+
+div.min-tc table.table-component tbody tr td div{
+min-height: 30px;
+position: relative;
+}
+
+div.min-tc table.table-component tbody tr td input[ type="checkbox"]{
+position: relative;
+top: 5px;
+left:5px;
+}
+
+div.min-tc table td i.reorder{
+position: absolute;
+top: 6px;
+left:10px;
+display: inline-block;
+margin-right: 5px;
+width: 10px;
+height: 16px;
+background-image: url('/ui-v1/js/components/backbone/table/assets/images/reorder.png');
+background-repeat: no-repeat;
+opacity: .33;
+
+}
+
+div.min-tc table td:hover i.reorder{
+opacity: 1;
+}
+
+div.min-tc tbody tr:hover{
+background: #FFFFBF !important;
+transition:none;
+
+
+}
+div.min-tc table.table-component{
+border-radius: 0px !important;
+}
+
+div.min-tc .jtmgio-formatted-table th{
+border-radius: 0px !important;
+}
+div.min-tc div.jtmgio-pager {
+text-align: inherit;
+float: none;
+
+}
+div.min-tc div.jtmgio-pager .col{
+}
+
+th.jtmgio-th.override-sort div, th.jtmgio-th.first.checkbox div{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-color: rgb(191, 191, 191);
+}
+
+
+div.pager-btn-container{
+position: relative;
+margin-top: 20px;
+}
+
+div.pager-btn-container div.per-page{
+float: left;
+}
+
+div.pager-btn-container div.go-to-page{
+float: right;
+}
+div.pager-btn-container p{
+padding-top: 2px;
+font-size:13px;
+}
+
+div.pager-btn-container div.go-to-page .go-to-page-frm,
+div.pager-btn-container div.go-to-page .button-group{
+float: left;
+}
+
+div.pager-btn-container div.go-to-page .button-group p{
+padding-top: 0px;
+}
+
+div.pager-btn-container select{
+padding: .4em;
+border: 1px solid #8a8a8a;
+border-radius: 2px;
+height: 26px;
+
+}
+
+/*user picker */
+
+
+div.min-tc  div.list-btn-container{
+
+margin: 20px 0 10px 0;
+
+}
+
+
+div.min-tc  div.list-btn-container #toggle-all{
+float: left;
+
+}
+
+div.min-tc  div.list-btn-container div.input-search{
+position: relative;
+float: right;
+}
+
+div.min-tc  div.list-btn-container div.input-search .icon-container{
+width: 228px;
+position: relative;
+
+}
+div.min-tc  div.list-btn-container div.input-search i{
+position: absolute;
+font-size: 18px !important;
+color: #494949;
+z-index: 99;
+top: 6px;
+
+}
+div.min-tc  div.list-btn-container div.input-search i.icon-search{
+left: 10px;
+}
+div.min-tc  div.list-btn-container div.input-search i.icon-remove-circle{
+right: 2px;
+color: #e1e1e1;
+}
+
+
+div.min-tc  div.list-btn-container #search-profiles,
+div.min-tc  div.list-btn-container #search-collection{
+	font-size: 13px;
+	height: 17px;
+	margin: 0 2px;
+	padding: 4px 5px 5px;
+	position: relative;
+	background: #fff;
+	-webkit-box-shadow:0 0 5px #f8f8f8 inset;
+-moz-box-shadow:0 0 5px #f8f8f8 inset;
+	box-shadow:0 0 5px #f8f8f8 inset;
+font-family: 'Open Sans', Arial, sans-serif;
+outline: none;
+border: 1px solid #0079C2;
+
+width: 200px;
+padding-left: 24px;
+}
+
+
+div.min-tc  #addLinkedProfileTableComponent,
+div.min-tc .table-component{
+margin-top: 15px;
+}

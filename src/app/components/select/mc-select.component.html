@@ -1,0 +1,9 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+
+<mat-form-field class="formField" floatPlaceholder="never" [class.overlayOpen]="theTrigger.panelOpen" [class.multiple]="multiple" [class.overlayClosed]="!theTrigger.panelOpen" >
+    <input matInput [formControl]="control" [jtmgioSelectTrigger]="auto" [placeholder]="placeholder" class="baseInput">
+    <mat-icon matSuffix (click)="closeOverlay($event)" class="downArrow">{{theTrigger.panelOpen ? "arrow_drop_up" : "arrow_drop_down"}}</mat-icon>
+</mat-form-field>
+
+<jtmgio-select-overlay [disabled]="disabled" [closeOverlay]="theTrigger.closePanel.bind(theTrigger)" [multiple]="multiple" [hideFilter]="hideFilter" #auto="jtmgioOverlay" [list]="list" placeholder="placeholder" [displayWith]="displayWith"></jtmgio-select-overlay>

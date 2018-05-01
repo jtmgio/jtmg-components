@@ -1,0 +1,293 @@
+/** Table styles
+
+table.adminlist {
+	width: 100%;
+	margin: 10px 0;
+	color: #4a4a4a;
+}
+table.adminlist td, table.adminlist th {
+	padding: 0 4px;
+}
+table.adminlist thead th {
+	text-align: center;
+	background: #4a4a4a;
+	color: #f1f1f1;
+	border-left: 1px solid #f1f1f1;
+	height: 40px; line-height: 40px;
+	padding: 0 4px;
+	font-weight: normal;
+}
+table.adminlist thead th a {color: #f1f1f1}
+table.adminlist thead a:hover {
+	text-decoration: none;
+}
+table.adminlist thead th img {
+	vertical-align: middle;
+}
+table.adminlist tbody tr.row0:hover td, 
+table.adminlist tbody tr.row1:hover td {
+	background-color: #ffd;
+}
+table.adminlist tbody tr td {
+	height: 30px;
+	background: #fff;
+}
+table.adminlist tbody tr.row1 td {
+	background: #f9f9f9;
+}
+table.adminlist tfoot tr {
+	text-align: center;
+}
+table.adminlist tfoot td {
+	background-color: #f3f3f3;
+	border-top: 1px solid #4a4a4a;
+	text-align: center;
+	padding: 10px 0;
+}
+table.adminlist td.order {
+	text-align: center;
+	white-space: nowrap;
+}
+table.adminlist td.order span {
+	float: left;
+	display: block;
+	width: 20px;
+	text-align: center;
+}
+table.adminlist .pagination {
+	display:table;
+	padding:0;
+	margin:0 auto;
+}
+.pagination div.limit {
+	float: left;
+	height: 22px;
+	line-height: 22px;
+	margin: 0 10px;
+}
+
+
+
+
+/* standard form style table */
+/*
+div.col {
+	float: left;
+}
+div.width-45 {
+	width: 45%;
+}
+div.width-55 {
+	width: 55%;
+}
+div.width-50 {
+	width: 50%;
+}
+div.width-70 {
+	width: 70%;
+}
+div.width-30 {
+	width: 30%;
+}
+div.width-60 {
+	width: 60%;
+}
+div.width-40 {
+	width: 40%;
+}
+table.admintable td {
+	padding: 3px;
+}
+table.admintable td.key, table.admintable td.paramlist_key {
+	background-color: #f6f6f6;
+	text-align: right;
+	width: 140px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+}
+table.paramlist td.paramlist_description {
+	background-color: #f6f6f6;
+	text-align: left;
+	width: 170px;
+	color: #333;
+	font-weight: normal;
+	border-bottom: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+}
+table.admintable td.key.vtop {
+	vertical-align: top;
+}
+table.adminform {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 8px 0 10px 0;
+	margin-bottom: 15px;
+	width: 100%;
+}
+table.adminform.nospace {
+	margin-bottom: 0;
+}
+table.adminform tr.row0 {
+	background-color: #f9f9f9;
+}
+table.adminform tr.row1 {
+	background-color: #eeeeee;
+}
+table.adminform th {
+	font-size: 11px;
+	padding: 6px 2px 4px 4px;
+	text-align: left;
+	height: 25px;
+	color: #000;
+	background-repeat: repeat;
+}
+table.adminform td {
+	padding: 3px;
+	text-align: left;
+	background-color: #fff;
+}
+table.adminform ul {
+	margin-left: 8px;
+	padding-left: 8px;
+}
+table.adminform td.filter {
+	text-align: left;
+}
+table.adminform td.helpMenu {
+	text-align: right;
+}
+fieldset.adminform {
+	border: 1px solid #ccc;
+	margin: 0 10px 10px 10px;
+}
+
+
+
+/*bordered table*/
+/*
+.jtmgio-blue {
+	color:#A6C9E2;
+}
+.jtmgio-dark-blue {
+	color:#2A8FCC;
+}
+.jtmgio-hide {
+	display:none;
+}
+
+table.jtmgio-formatted-table {
+ *border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	margin:10px 0;
+}
+.jtmgio-formatted-table {
+	border: solid #ccc 1px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 1px #ccc;
+	-moz-box-shadow: 0 1px 1px #ccc;
+	box-shadow: 0 1px 1px #ccc;
+}
+.jtmgio-formatted-table td {
+	padding:3px 0 3px 10px !important;
+}
+.jtmgio-formatted-table td.first {
+	width:55%;
+}
+.jtmgio-formatted-table td.num {
+	width:10%;
+}
+.jtmgio-formatted-table td.num p {
+	text-align:right;
+	padding-right:5px;
+}
+.jtmgio-formatted-table td p {
+	font-size:12px;
+	padding:0;
+	margin:0;
+	line-height:30px;
+}
+
+.jtmgio-formatted-table td {
+	font-size:12px;
+	padding:0;
+	margin:0;
+	line-height:30px;
+}
+
+.jpane-slider div > p {
+	font-size:12px;
+	padding:0;
+	margin:0 10px;
+	line-height:30px;
+}
+
+.jtmgio-formatted-table tr td a {
+	color:#0079c2;
+}
+
+.jtmgio-formatted-table td, .jtmgio-formatted-table th {
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	padding: 10px;
+	text-align: left;
+}
+.jtmgio-formatted-table th {
+	background-color: #dce9f9;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+	-moz-box-shadow:0 1px 0 rgba(255, 255, 255, .8) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+	border-top: none;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+.jtmgio-formatted-table td:first-child, .jtmgio-formatted-table th:first-child {
+	border-left: none;
+}
+.jtmgio-formatted-table th:first-child {
+	-moz-border-radius: 6px 0 0 0;
+	-webkit-border-radius: 6px 0 0 0;
+	border-radius: 6px 0 0 0;
+}
+.jtmgio-formatted-table th:last-child {
+	-moz-border-radius: 0 6px 0 0;
+	-webkit-border-radius: 0 6px 0 0;
+	border-radius: 0 6px 0 0;
+}
+.jtmgio-formatted-table th:only-child {
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+}
+.jtmgio-formatted-table tr:last-child td:first-child {
+	-moz-border-radius: 0 0 0 6px;
+	-webkit-border-radius: 0 0 0 6px;
+	border-radius: 0 0 0 6px;
+}
+.jtmgio-formatted-table tr:last-child td:last-child {
+	-moz-border-radius: 0 0 6px 0;
+	-webkit-border-radius: 0 0 6px 0;
+	border-radius: 0 0 6px 0;
+}
+.jtmgio-formatted-table ul {
+	margin:10px 0;
+}
+.jtmgio-formatted-table ul li {
+	float:left;
+	list-style:none;
+	margin:0 5px;
+	height:38px;
+	line-height:32px;
+}
+.jtmgio-formatted-table .ui-widget {
+	font-size:10px !important;
+	margin-top:3px;
+}
+
+
+
+
+*/

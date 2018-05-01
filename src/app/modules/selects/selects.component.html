@@ -1,0 +1,19 @@
+<!-- OLD Implmentation (Backwards Compatible)
+<mat-form-field floatPlaceholder="never">
+  <input matInput [formControl]="formControl" [jtmgioSelectTrigger]="auto" placeholder="SOMETHING">
+</mat-form-field>
+<jtmgio-select-overlay [multiple]="true" [hideFilter]="true" #auto="jtmgioOverlay" [list]="list" placeholder="Cool thing yo" [displayWith]="displayMultipleFn"></jtmgio-select-overlay> 
+-->
+<h2>Single Select</h2>
+<jtmgio-select [control]="formControl" placeholder="This is a placeholder" [list]="list"></jtmgio-select>
+
+<h2>Multiple Select</h2>
+<jtmgio-select [control]="formControl2" [multiple]="true" [list]="list" [displayWith]="displayString"></jtmgio-select>
+
+<h2>Multiple Select</h2>
+<p>Disabled</p>
+<jtmgio-select [disabled]="true" [control]="formControl2" [multiple]="true" [list]="list" [displayWith]="displayString"></jtmgio-select>
+
+<h2>Multiple Select</h2>
+<p>No Filter, Updating Label</p>
+<jtmgio-select [control]="formControl3" placeholder="This is a placeholder" [multiple]="true" [hideFilter]="true" [list]="list" [displayWith]="displayMultipleFn"></jtmgio-select>
