@@ -1,13 +1,6 @@
 # jtmgio-UI-Components
 
 ## Creating/Deploying a Shared Component 
-1. Create feature/bug branch from master repo 
-
-	```bash
-	git checkout master
-	git pull --rebase origin master
-	git checkout -b YOUR.INITIALS/feature|bug/feature|bug_name
-	```
 
 
 1. Create shared component
